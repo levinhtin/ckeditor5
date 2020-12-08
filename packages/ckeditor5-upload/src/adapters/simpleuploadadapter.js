@@ -211,7 +211,7 @@ class Adapter {
 		// Prepare the form data.
 		const data = new FormData();
 
-		data.append( 'upload', file );
+		data.append( 'files', file );
 
 		// Send the request.
 		this.xhr.send( data );

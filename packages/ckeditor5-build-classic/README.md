@@ -34,14 +34,23 @@ And use it in your website:
 </div>
 <script src="./node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
 <script>
-	ClassicEditor
-		.create( document.querySelector( '#editor' ) )
-		.then( editor => {
-			window.editor = editor;
-		} )
-		.catch( error => {
-			console.error( 'There was a problem initializing the editor.', error );
-		} );
+	ClassicEditor.create(document.querySelector('#editor'), {
+			simpleUpload: {
+				// The URL the images are uploaded to.
+				uploadUrl: 'http://example.com',
+				// Headers sent along with the XMLHttpRequest to the upload server.
+				headers: {
+					Authorization: 'Bearer ...'
+				},
+				fileName: 'files'
+			}
+		})
+			.then(editor => {
+				window.editor = editor;
+			})
+			.catch(error => {
+				console.error('There was a problem initializing the editor.', error);
+			});
 </script>
 ```
 
