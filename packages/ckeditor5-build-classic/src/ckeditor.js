@@ -39,7 +39,8 @@ import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import HorizontalLine from '@ckeditor/ckeditor5-horizontal-line/src/horizontalline';
 import Font from '@ckeditor/ckeditor5-font/src/font'
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
-import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
+// import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
+import SimpleUploadAdapterStrapi from 'ckeditor5-upload-strapi/src/adapters/simpleuploadadapterstrapi';
 import ViewSource from './plugins/viewsource';
 import FlexBox from './plugins/flexbox/flexbox';
 
@@ -80,7 +81,7 @@ ClassicEditor.builtinPlugins = [
 	HorizontalLine,
 	Font,
 	TextTransformation,
-	SimpleUploadAdapter,
+	SimpleUploadAdapterStrapi,
 	ViewSource,
 	FlexBox,
 ];
