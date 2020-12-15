@@ -23,7 +23,11 @@ See:
 First, install the build from npm:
 
 ```bash
-npm install --save @ckeditor/ckeditor5-build-classic
+npm install --save ckeditor5-build-classic-with-strapi-upload
+```
+or 
+```bash
+yarn add ckeditor5-build-classic-with-strapi-upload
 ```
 
 And use it in your website:
