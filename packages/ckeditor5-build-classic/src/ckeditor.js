@@ -12,6 +12,7 @@ import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
+import Aligment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
@@ -49,6 +50,7 @@ export default class ClassicEditor extends ClassicEditorBase { }
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
+	Aligment,
 	Essentials,
 	UploadAdapter,
 	Autoformat,
@@ -115,7 +117,6 @@ ClassicEditor.defaultConfig = {
 			'fontbackgroundcolor',
 			'|',
 			'code',
-			'codeBlock',
 			'|',
 			'link',
 			'blockQuote',
@@ -137,8 +138,8 @@ ClassicEditor.defaultConfig = {
 	},
 	image: {
 		toolbar: [
-			'imageStyle:full',
-			'imageStyle:side',
+			// 'imageStyle:full',
+			// 'imageStyle:side',
 			'imageStyle:alignLeft', 'imageStyle:alignCenter', 'imageStyle:alignRight',
 			'|',
 			'imageResize:25',
