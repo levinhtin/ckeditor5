@@ -43,6 +43,7 @@ import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformatio
 import SimpleUploadAdapterStrapi from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapterstrapi';
 import ViewSource from './plugins/viewsource';
 import FlexBox from './plugins/flexbox/flexbox';
+import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
 
 export default class ClassicEditor extends ClassicEditorBase { }
 
@@ -85,6 +86,7 @@ ClassicEditor.builtinPlugins = [
 	SimpleUploadAdapterStrapi,
 	ViewSource,
 	FlexBox,
+	HtmlEmbed,
 ];
 
 // Editor configuration.
@@ -126,6 +128,7 @@ ClassicEditor.defaultConfig = {
 			'subscript',
 			'superscript',
 			'code',
+			'htmlEmbed',
 			'|',
 			'viewSource',
 			'|',
